@@ -24,4 +24,4 @@ sudo systemctl status processLimiter.service
 ```
 top
 ```
-(It may take some time for the program to start being limited, change the 'sleepTime' variable at the top of the Python script to modify this)
+(It may take some time for the program to start being limited, as the program only checks every 60 seconds by default)
