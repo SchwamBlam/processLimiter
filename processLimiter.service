@@ -1,0 +1,11 @@
+[Unit]
+Description=Automatically limit CPU usages of programs as they spawn
+After=multi-user.target
+
+[Service]
+Type=idle
+User=user
+ExecStart=/usr/bin/python3 /home/processLimiter.py
+
+[Install]
+WantedBy=multi-user.target
